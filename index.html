@@ -10,7 +10,9 @@
 <body>
     <div class="calculator-section">
         <div class="display-section">
-
+            <form name="form">
+                <input type="text" class="textview" readonly>
+            </form>
         </div>
         
         <div class="selection-section">
@@ -18,23 +20,23 @@
                 <div class="grid-item"  id="reset" onclick="onReset(this.id)">C</div>
                 <div class="grid-item" id="sign-change" onclick="onSignChange(this.id)">+/-</div>
                 <div class="grid-item" id="modulus" onclick="onModulus(this.id)">%</div>  
-                <div class="grid-item operator" id="division" onclick="onOperationClick(this.id)">÷</div>
-                <div class="grid-item" id="7" onclick="onNumberClick(this.id)">7</div>
-                <div class="grid-item" id="8" onclick="onNumberClick(this.id)">8</div>  
-                <div class="grid-item" id="9" onclick="onNumberClick(this.id)">9</div>
-                <div class="grid-item operator"  id="multi" onclick="onOperationClick(this.id)">x</div>
-                <div class="grid-item" id="4" onclick="onNumberClick(this.id)">4</div> 
-                <div class="grid-item" id="5" onclick="onNumberClick(this.id)">5</div> 
-                <div class="grid-item" id="6" onclick="onNumberClick(this.id)">6</div>    
-                <div class="grid-item operator" id="subtraction" onclick="onOperationClick(this.id)">-</div>  
-                <div class="grid-item" id="1" onclick="onNumberClick(this.id)">1</div>
-                <div class="grid-item" id="2" onclick="onNumberClick(this.id)">2</div>  
-                <div class="grid-item"id="3" onclick="onNumberClick(this.id)">3</div>  
-                <div class="grid-item operator" id="addition" onclick="onOperationClick(this.id)">+</div> 
-                <div class="grid-item" id="0" onclick="onNumberClick(this.id)">0</div> 
+                <div class="grid-item operator" id="division" onclick="insert('/')">÷</div>
+                <div class="grid-item" id="7" onclick="insert(this.id)">7</div>
+                <div class="grid-item" id="8" onclick="insert(this.id)">8</div>  
+                <div class="grid-item" id="9" onclick="insert(this.id)">9</div>
+                <div class="grid-item operator"  id="multi" onclick="insert('*')">x</div>
+                <div class="grid-item" id="4" onclick="insert(this.id)">4</div> 
+                <div class="grid-item" id="5" onclick="insert(this.id)">5</div> 
+                <div class="grid-item" id="6" onclick="insert(this.id)">6</div>    
+                <div class="grid-item operator" id="subtraction" onclick="insert('-')">-</div>  
+                <div class="grid-item" id="1" onclick="insert(this.id)">1</div>
+                <div class="grid-item" id="2" onclick="insert(this.id)">2</div>  
+                <div class="grid-item"id="3" onclick="insert(this.id)">3</div>  
+                <div class="grid-item operator" id="addition" onclick="insert('+')">+</div> 
+                <div class="grid-item" id="0" onclick="insert(this.id)">0</div> 
                 <div class="grid-item" id="dot" onclick="onDot(this.id)">.</div>   
                 <div class="grid-item" id="delete" onclick="onDelete(this.id)">del</div> 
-                <div class="grid-item equals" id="equals" onclick="onequalsClick(this.id)">=</div>      
+                <div class="grid-item equals" id="equals" onclick="onequalsClick()">=</div>      
             </div>
         </div>
 

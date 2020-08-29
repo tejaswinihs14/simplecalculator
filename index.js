@@ -2,8 +2,9 @@ function onReset(id){
     console.log(id);
 }
 
-function onNumberClick(id){
-    console.log(id);
+function insert(id){
+    document.form.textview.value = document.form.textview.value + id;
+    console.log(document.form);
 }
 
 function onOperationClick(id){
