@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="calculator-section">
+        <div class="display-section">
+
+        </div>
+        
+        <div class="selection-section">
+            <div class="grid-container">
+                <div class="grid-item"  id="reset" onclick="onReset(this.id)">C</div>
+                <div class="grid-item" id="sign-change" onclick="onSignChange(this.id)">+/-</div>
+                <div class="grid-item" id="modulus" onclick="onModulus(this.id)">%</div>  
+                <div class="grid-item operator" id="division" onclick="onOperationClick(this.id)">÷</div>
+                <div class="grid-item" id="7" onclick="onNumberClick(this.id)">7</div>
+                <div class="grid-item" id="8" onclick="onNumberClick(this.id)">8</div>  
+                <div class="grid-item" id="9" onclick="onNumberClick(this.id)">9</div>
+                <div class="grid-item operator"  id="multi" onclick="onOperationClick(this.id)">x</div>
+                <div class="grid-item" id="4" onclick="onNumberClick(this.id)">4</div> 
+                <div class="grid-item" id="5" onclick="onNumberClick(this.id)">5</div> 
+                <div class="grid-item" id="6" onclick="onNumberClick(this.id)">6</div>    
+                <div class="grid-item operator" id="subtraction" onclick="onOperationClick(this.id)">-</div>  
+                <div class="grid-item" id="1" onclick="onNumberClick(this.id)">1</div>
+                <div class="grid-item" id="2" onclick="onNumberClick(this.id)">2</div>  
+                <div class="grid-item"id="3" onclick="onNumberClick(this.id)">3</div>  
+                <div class="grid-item operator" id="addition" onclick="onOperationClick(this.id)">+</div> 
+                <div class="grid-item" id="0" onclick="onNumberClick(this.id)">0</div> 
+                <div class="grid-item" id="dot" onclick="onDot(this.id)">.</div>   
+                <div class="grid-item" id="delete" onclick="onDelete(this.id)">del</div> 
+                <div class="grid-item equals" id="equals" onclick="onequalsClick(this.id)">=</div>      
+            </div>
+        </div>
+
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
