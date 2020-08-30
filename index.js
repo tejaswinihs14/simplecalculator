@@ -1,11 +1,12 @@
 function onReset(id){
-    console.log(id);
+    document.form.textview.value = '';
 }
 
-function insert(id){
-    document.form.textview.value = document.form.textview.value + id;
-    console.log(document.form);
+function insert(num){
+    document.form.textview.value = document.form.textview.value + num;
+   
 }
+
 
 function onOperationClick(id){
     console.log(id);
@@ -23,10 +24,11 @@ function onDot(id){
     console.log(id);
 }
 
-function onDelete(id){
-    console.log(id);
+function onDelete(){
+    document.form.textview.value = document.form.textview.value.slice(0,-1);
 }
 
-function onequalsClick(id){
-    console.log(id);
+function onequalsClick(){
+    document.form.textview.value = eval(document.form.textview.value)
+  
 }

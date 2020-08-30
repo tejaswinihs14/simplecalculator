@@ -11,7 +11,7 @@
     <div class="calculator-section">
         <div class="display-section">
             <form name="form">
-                <input type="text" class="textview" readonly>
+                <input class="textview" type="text" name="textview" readonly>
             </form>
         </div>
         
@@ -19,7 +19,7 @@
             <div class="grid-container">
                 <div class="grid-item"  id="reset" onclick="onReset(this.id)">C</div>
                 <div class="grid-item" id="sign-change" onclick="onSignChange(this.id)">+/-</div>
-                <div class="grid-item" id="modulus" onclick="onModulus(this.id)">%</div>  
+                <div class="grid-item" id="%" onclick="insert(this.id)">%</div>  
                 <div class="grid-item operator" id="division" onclick="insert('/')">÷</div>
                 <div class="grid-item" id="7" onclick="insert(this.id)">7</div>
                 <div class="grid-item" id="8" onclick="insert(this.id)">8</div>  
@@ -34,7 +34,7 @@
                 <div class="grid-item"id="3" onclick="insert(this.id)">3</div>  
                 <div class="grid-item operator" id="addition" onclick="insert('+')">+</div> 
                 <div class="grid-item" id="0" onclick="insert(this.id)">0</div> 
-                <div class="grid-item" id="dot" onclick="onDot(this.id)">.</div>   
+                <div class="grid-item" id="." onclick="insert(this.id)">.</div>   
                 <div class="grid-item" id="delete" onclick="onDelete(this.id)">del</div> 
                 <div class="grid-item equals" id="equals" onclick="onequalsClick()">=</div>      
             </div>
